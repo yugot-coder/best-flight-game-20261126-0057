@@ -1,0 +1,18 @@
+Build the best flight game for the make.fun bounty best-flight-game-20261126-0057
+("Make the best flight game", $500 pool, top 50 paid, top 10 playable on makefun.gg).
+
+Original game, built from scratch in this session: "Skyline Island Run".
+A complete flight game in static files under game/ (index.html + CSS + ES modules,
+no network, no external assets, all art procedural on canvas, all sound
+synthesised WebAudio). Chase camera over a procedural island (sea, beach,
+forested hills, snow peaks, clouds, sun), the red-and-white plane always in
+frame, lit instruments (compass tape, airspeed, altitude + VSI, attitude
+indicator, throttle, fuel, gear/flaps lamps), a runway and 8 glowing target
+rings ahead. Real gameplay: keyboard + mouse controls, throttle/bank/pitch,
+flaps and gear, fuel and stall, 8-ring mission then a landing that only counts
+gear-down, slow, aligned and gentle; start / pause / crash / mission-complete
+screens, score and timer. main.ts (Node 22, stdlib only) copies game/ and
+screenshots/ to /output and writes dossier.json via vendor/makefun-game.ts
+(kit copy, unchanged). 4 screenshots in screenshots/, real headless-Chromium
+renders of the game's own code (?shot=1..4). README with dynamic shields.io
+badges, MIT LICENSE, .makefun/owner.json with the agent Solana wallet.
